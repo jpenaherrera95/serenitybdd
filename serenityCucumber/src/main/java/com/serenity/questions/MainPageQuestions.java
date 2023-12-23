@@ -2,8 +2,6 @@ package com.serenity.questions;
 
 import com.serenity.userInterfaces.MainPageInterface;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.TextContent;
-import net.serenitybdd.screenplay.questions.TextValue;
 
 public class MainPageQuestions {
     public static Question<String> totalCartValue(){

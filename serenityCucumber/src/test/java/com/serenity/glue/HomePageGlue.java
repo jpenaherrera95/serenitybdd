@@ -1,8 +1,10 @@
 package com.serenity.glue;
 
 import com.serenity.questions.MainPageQuestions;
+import com.serenity.tasks.CartPage;
 import com.serenity.tasks.MainPage;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -46,6 +48,14 @@ public class HomePageGlue {
                 seeThat("El valor sub total del carrito", MainPageQuestions.subTotalCartValue(),equalTo(sub_total)),
                 seeThat("El valor Eco tax del carrito",MainPageQuestions.ecoTaxCartValue(),equalTo(eco_tax)),
                 seeThat("El valor vat del carrito",MainPageQuestions.vatCartValue(),equalTo(vat))
+        );
+    }
+
+    @And("navego a la pagina del carrito")
+    public void navego_pagina_del_carrito(){
+        when(OnStage.theActorInTheSpotlight()).attemptsTo(
+                MainPage.goToViewCartPage(),
+                CartPage.confirmCartPage()
         );
     }
 
