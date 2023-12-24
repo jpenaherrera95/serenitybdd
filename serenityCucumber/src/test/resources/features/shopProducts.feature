@@ -18,6 +18,9 @@ Feature: Comprar productos desde OpenCart
     Then valido los precios antes de comprar <sub_total> <flat> <total_with_flat>
     And completo la compra
 
+    #Validar la pagina success
+    Then nos redirigimos a la pagina success
+
   Examples:
     | total_price | sub_total | eco_tax | vat     | flat  | total_with_flat |
     | $725.20     | $601.00   | $4.00   | $120.20 | $5.00 | $606.00         |

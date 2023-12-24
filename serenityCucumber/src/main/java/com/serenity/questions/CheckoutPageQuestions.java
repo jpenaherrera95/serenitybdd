@@ -1,6 +1,5 @@
 package com.serenity.questions;
 
-import com.serenity.userInterfaces.CartPageInterface;
 import com.serenity.userInterfaces.CheckoutPageInterface;
 import net.serenitybdd.screenplay.Question;
 

@@ -2,7 +2,6 @@ package com.serenity.glue;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.serenity.TestUtils;
-import com.serenity.questions.CartPageQuestions;
 import com.serenity.questions.CheckoutPageQuestions;
 import com.serenity.tasks.CheckoutPage;
 import io.cucumber.java.en.And;
