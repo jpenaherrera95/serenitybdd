@@ -1,6 +1,7 @@
 package com.serenity.tasks;
 
 import com.serenity.userInterfaces.CartPageInterface;
+import com.serenity.userInterfaces.CheckoutPageInterface;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -26,7 +27,8 @@ public class CartPage {
         return Task.where("{0} valida los elementos de la pagina Cart",
                 WaitUntil.the(CartPageInterface.CHECKOUT_BUTTON, isVisible()).forNoMoreThan(5).seconds(),
                 Scroll.to(CartPageInterface.CHECKOUT_BUTTON),
-                Click.on(CartPageInterface.CHECKOUT_BUTTON)
+                Click.on(CartPageInterface.CHECKOUT_BUTTON),
+                WaitUntil.the(CheckoutPageInterface.CHECKOUT_PAGE_TITLE, isVisible()).forNoMoreThan(5).seconds()
         );
     }
 }
