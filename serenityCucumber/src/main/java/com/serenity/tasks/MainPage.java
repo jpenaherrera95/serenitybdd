@@ -2,10 +2,8 @@ package com.serenity.tasks;
 
 import com.serenity.userInterfaces.MainPageInterface;
 import net.serenitybdd.screenplay.Performable;
-import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
-import net.serenitybdd.screenplay.waits.WaitOnQuestion;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
