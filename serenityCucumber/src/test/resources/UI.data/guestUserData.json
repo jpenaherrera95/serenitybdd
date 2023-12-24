@@ -1,0 +1,15 @@
+{
+  "guestUser": {
+    "firstName": "Jose",
+    "lastName": "Penaherrera",
+    "email": "joseemiliopenaherrera@gmail.com",
+    "telephone": "+593995112624",
+    "company": "NTT Data",
+    "addressLineOne": "Colimes",
+    "addressLineTwo": "Granados",
+    "city": "Quito",
+    "postalCode": "170503",
+    "country": "Ecuador",
+    "region": "Pichincha"
+  }
+}
