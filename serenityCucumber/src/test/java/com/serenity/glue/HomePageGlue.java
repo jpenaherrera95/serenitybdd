@@ -20,10 +20,6 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.Matchers.equalTo;
 
 public class HomePageGlue {
-    private static final String ACTOR_NAME = "User";
-    private static final String DATA_NAME = "";
-    private static final String PROPERTIES_FILE = "/config/%s.properties";
-    private static final Properties PROPERTIES = new Properties();
 
     @Before
     public void setTheStage(){
