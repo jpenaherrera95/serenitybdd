@@ -2,6 +2,7 @@
 
 Este proyecto consta de dos partese:
 - Automatizacion de UI con Serenity BDD utilizando el patron de diseño ScreenPlay
+- - En este caso estamos usando el friver para Mozilla (la configuracion esta en test/resources/serenity.conf)
 - Automtizacion de API utilizando la herramienta Karate
 
 > :information_source: Este Repositorio tiene fines de aprendizaje. Fue contruido utilizando un Mac con procesador M2
@@ -78,7 +79,7 @@ build.gradle                                   # Configuracion de las dependenci
 ```
 
 
-## Enlaces de ayuda
+## Enlaces de Ayuda
 
 - [Serenity BDD Screen Play documentación](https://serenity-bdd.github.io/docs/screenplay/screenplay_fundamentals#screenplay-and-cucumber)
 - [Serenity BDD Screen Play guía de pruebas](https://serenity-bdd.github.io/docs/screenplay/screenplay_webdriver)
