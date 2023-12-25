@@ -1,9 +1,6 @@
 # serenitybdd
 
-Este proyecto consta de dos partese:
-- Automatizacion de UI con Serenity BDD utilizando el patron de diseño ScreenPlay
-- - En este caso estamos usando el friver para Mozilla (la configuracion esta en test/resources/serenity.conf)
-- Automtizacion de API utilizando la herramienta Karate
+Este proyecto esta orientado a la creacion de pruebas automatizadas usando Serenity BDD con el patron ScreenPlay con el navegador Mozilla
 
 > :information_source: Este Repositorio tiene fines de aprendizaje. Fue contruido utilizando un Mac con procesador M2
 
@@ -24,25 +21,10 @@ Este proyecto consta de dos partese:
 | serenity-junit      | 3.6.23      |
 | serenity-screenplay-webdriver      | 3.6.23      |
 | serenity-screenplay      | 3.6.23      |
-| karate      | XXX      |
 
-## Instalación y Ejecución
-
-Como podemos observar estamos utilizando Gradle para manejar nuestras dependencias, al momento de ejecutar las pruebas (comando test) procederemos a configurar las dependencias, es por este motivo que:
-
-### Pruebas de UI
+### Pruebas de UI: Instalación y Ejecución
+> :information_source: Estamos usando Gradle para nuestras dependencias, con el comando test detallado a continuacion las vamos a instalar
 Desde la carpeta serenityCucumber podemos usar este comando para ejecutar las pruebas de la UI especificando nuestro runner para la UI (test/java/com.serenity/runners/TestRunners)
-
-```
-$ ./gradlew test --tests com.serenity.runners.TestRunners
-```
-Una vez ejecutadas las pruebas, se genera un reporte en el directorio:
-- target/site/serenity/index.html
-Las configuraciones para los reportes estan en:
-- test/resources/serenity.conf
-
-### Pruebas de API
-Desde la carpeta serenityCucumber podemos usar este comando para ejecutar las pruebas de las APIs especificando nuestro runner para las APIs (test/java/com.serenity/runners/XXX)
 
 ```
 $ ./gradlew test --tests com.serenity.runners.TestRunners
