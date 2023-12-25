@@ -1,0 +1,17 @@
+Conclusiones
+
+Logramos implementar un proyecto de Serenity BDD utilizando el patron de diseño de ScreenPlay
+
+Con esto logramos tranquilamente configurar:
+- Ambientes (aunque no se usan en este proyecto)
+- Data-driven
+- Separar los metodos, interfaces y validaciones que puede realiazar un actor y unificarlos en los steps-definitions
+- Usar BDD para hacer los casos de pruebas mas entendibles
+- Utilizar los tags poara definir las pruebas a ejecutarse
+- Configurar reportes de las aplicaciones
+- Crear Utils que puedan ser usados por multiples pruebas
+
+En resumen, con esta herramienta y patron se puede tranquilamente escalarlos a un proyecto mas complejo de la vida real
+Aun existen escenarios que deben ser validados como la creacion de Tokens mediante APIs y como se maneja el tema de la cache entre escenarios
+cosas que no fueran validadas para este ejercicio por como la pagina que usamos estaba configurada
+
