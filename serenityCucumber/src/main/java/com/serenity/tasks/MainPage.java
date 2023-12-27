@@ -1,11 +1,13 @@
 package com.serenity.tasks;
 
+import com.serenity.Main;
 import com.serenity.userInterfaces.MainPageInterface;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class MainPage {
@@ -20,14 +22,13 @@ public class MainPage {
 
     public static Performable addProductsToCart(){
         return Task.where("{0} agregar dos productos al carrito",
-                WaitUntil.the(MainPageInterface.ADD_TO_CART_FIRST, isVisible()).forNoMoreThan(5).seconds(),
+                WaitUntil.the(MainPageInterface.ADD_TO_CART_FIRST, isClickable()).forNoMoreThan(5).seconds(),
                 Click.on(MainPageInterface.ADD_TO_CART_FIRST),
                 WaitUntil.the(MainPageInterface.ADDED_ELEMENT_ALERT, isVisible()).forNoMoreThan(5).seconds(),
-                WaitUntil.the(MainPageInterface.ADD_TO_CART_SECOND, isVisible()).forNoMoreThan(5).seconds(),
+                WaitUntil.the(MainPageInterface.ADD_TO_CART_SECOND, isClickable()).forNoMoreThan(5).seconds(),
                 Click.on(MainPageInterface.ADD_TO_CART_SECOND),
                 WaitUntil.the(MainPageInterface.ADDED_ELEMENT_ALERT, isVisible()).forNoMoreThan(5).seconds(),
-                //Scroll.to(MainPageInterface.CART_TOTAL),
-                WaitUntil.the(MainPageInterface.CART_BUTTON, isVisible()).forNoMoreThan(5).seconds(),
+                WaitUntil.the(MainPageInterface.CART_BUTTON, isClickable()).forNoMoreThan(5).seconds(),
                 Click.on(MainPageInterface.CART_BUTTON)
         );
     }

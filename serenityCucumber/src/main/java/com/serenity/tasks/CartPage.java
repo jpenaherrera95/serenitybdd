@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class CartPage {
@@ -27,6 +28,7 @@ public class CartPage {
         return Task.where("{0} valida los elementos de la pagina Cart",
                 WaitUntil.the(CartPageInterface.CHECKOUT_BUTTON, isVisible()).forNoMoreThan(5).seconds(),
                 Scroll.to(CartPageInterface.CHECKOUT_BUTTON),
+                WaitUntil.the(CartPageInterface.CHECKOUT_BUTTON, isClickable()).forNoMoreThan(5).seconds(),
                 Click.on(CartPageInterface.CHECKOUT_BUTTON),
                 WaitUntil.the(CheckoutPageInterface.CHECKOUT_PAGE_TITLE, isVisible()).forNoMoreThan(5).seconds()
         );
