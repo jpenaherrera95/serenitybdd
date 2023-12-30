@@ -77,6 +77,7 @@ public class CheckoutPage {
         return Task.where("{0} completa la compra",
                 WaitUntil.the(CheckoutPageInterface.BANK_TRANSFER_LABEL, isVisible()).forNoMoreThan(5).seconds(),
                 WaitUntil.the(CheckoutPageInterface.CONFIRM_ORDER_BUTTON, isClickable()).forNoMoreThan(5).seconds(),
+                Scroll.to(CheckoutPageInterface.CONFIRM_ORDER_BUTTON),
                 Click.on(CheckoutPageInterface.CONFIRM_ORDER_BUTTON)
         );
     }

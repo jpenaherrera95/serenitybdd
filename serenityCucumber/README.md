@@ -30,7 +30,9 @@ Desde la carpeta serenityCucumber podemos usar este comando para ejecutar las pr
 $ ./gradlew test --tests com.serenity.runners.TestRunners
 ```
 Una vez ejecutadas las pruebas, se genera un reporte en el directorio:
-- target/site/serenity/index.html
+- target/site/serenity/index.html (Feature report)
+- build/report/tests/test/index.html
+
 Las configuraciones para los reportes estan en:
 - test/resources/serenity.conf
 
